@@ -6,6 +6,7 @@ const songsRouter = require("./controllers/songs_controller");
 const statsRouter = require("./controllers/stats_controller");
 const filterRouter = require("./controllers/filter_controller");
 const middleware = require("./utils/middleware");
+app.use(express.static("dist"));
 const mongoose = require("mongoose");
 mongoose.set("strictQuery", false);
 const app = express();
